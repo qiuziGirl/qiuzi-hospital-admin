@@ -1,0 +1,209 @@
+// TODO: 开放 stylelint 并进行调整
+// when menu collapsed
+.el-menu--vertical {
+  & > .el-menu {
+    .svg-icon {
+      margin-right: 16px;
+    }
+  }
+
+  .nest-menu .el-submenu > .el-submenu__title,
+  .el-menu-item {
+    &:hover {
+      // you can use $sub-menu-hover
+      background-color: $menu-hover !important;
+    }
+  }
+
+  // the scroll bar appears when the subMenu is too long
+  >.el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+    }
+  }
+}
+
+#app {
+  .main-container {
+    position: relative;
+    min-height: 100%;
+    margin-left: $side-bar-width;
+    transition: margin-left .28s;
+  }
+
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    width: $side-bar-width !important;
+    height: 100%;
+    overflow: hidden;
+    font-size: 0;
+    background-color: $menu-bg;
+    transition: width .28s;
+
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0;
+    }
+
+    .el-scrollbar {
+      height: 100%;
+    }
+
+    &.has-logo {
+      .el-scrollbar {
+        height: calc(100% - 50px);
+      }
+    }
+
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .el-menu {
+      width: 100% !important;
+      height: 100%;
+      border: none;
+    }
+
+    // menu hover
+    .submenu-title-noDropdown,
+    .el-submenu__title {
+      &:hover {
+        background-color: $menu-hover !important;
+      }
+    }
+
+    .is-active > .el-submenu__title {
+      color: $sub-menu-active-text !important;
+    }
+
+    .nest-menu .el-submenu > .el-submenu__title,
+    .el-submenu .el-menu-item {
+      min-width: $side-bar-width !important;
+      background-color: $sub-menu-bg !important;
+
+      &:hover {
+        background-color: $sub-menu-hover !important;
+      }
+    }
+  }
+
+  .hideSidebar {
+    .sidebar-container {
+      width: 54px !important;
+    }
+
+    .main-container {
+      margin-left: 54px;
+    }
+
+    .submenu-title-noDropdown {
+      position: relative;
+      padding: 0 !important;
+
+      .el-tooltip {
+        padding: 0 !important;
+
+        .svg-icon {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .el-submenu {
+      overflow: hidden;
+
+      & > .el-submenu__title {
+        padding: 0 !important;
+
+        .svg-icon {
+          margin-left: 20px;
+        }
+
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+      }
+    }
+
+    .el-menu--collapse {
+      .el-submenu {
+        & > .el-submenu__title {
+          & > span {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .el-menu--collapse .el-menu .el-submenu {
+    min-width: $side-bar-width !important;
+  }
+
+  .withoutAnimation {
+    .main-container,
+    .sidebar-container {
+      transition: none;
+    }
+  }
+
+  // mobile responsive
+  .mobile {
+    .main-container {
+      margin-left: 0;
+    }
+
+    .sidebar-container {
+      width: $side-bar-width !important;
+      transition: transform .28s;
+    }
+
+    &.hideSidebar {
+      .sidebar-container {
+        pointer-events: none;
+        transition-duration: .3s;
+        transform: translate3d(-$side-bar-width, 0, 0);
+      }
+    }
+  }
+}
+
