@@ -127,15 +127,6 @@ export default {
 </script>
 
 <style lang="scss">
-// TODO: 研究这个 css 有什么作用
-$cursor: #fff;
-
-@supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
-  .login-container .el-input input {
-    color: $cursor;
-  }
-}
-
 .login-container {
   .el-input {
     display: inline-block;
