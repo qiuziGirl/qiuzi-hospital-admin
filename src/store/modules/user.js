@@ -1,4 +1,4 @@
-// import { resetRouter } from '@/router'
+import { resetRouter } from '@/router'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const getDefaultState = () => {
@@ -67,19 +67,19 @@ const actions = {
     })
   },
 
-  // user logout TODO
+  // user logout
   logout ({ commit, state }) {
-    // return new Promise((resolve, reject) => {
-    //   logout(state.token).then(() => {
-    //     removeToken() // must remove  token  first
-    //     resetRouter()
-    //     commit('RESET_STATE')
-    //     commit('SET_ROLES', [])
-    //     resolve()
-    //   }).catch(error => {
-    //     reject(error)
-    //   })
-    // })
+    return new Promise((resolve, reject) => {
+      $api.common.logout(state.token).then(() => {
+        removeToken() // must remove  token  first
+        resetRouter()
+        commit('RESET_STATE')
+        commit('SET_ROLES', [])
+        resolve()
+      }).catch(error => {
+        reject(error)
+      })
+    })
   },
 
   // remove token
