@@ -13,7 +13,7 @@ module.exports = {
 
   /**
    * @type {boolean} true | false
-   * @description Whether show the logon in sidebar
+   * @description Whether show the logo in sidebar
    */
-  sidbarLogo: true
+  sidebarLogo: true
 }
