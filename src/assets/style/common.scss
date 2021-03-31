@@ -40,3 +40,24 @@ a:focus,
 a:active {
   outline: none;
 }
+
+
+.app-container {
+  padding: 20px;
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    margin-bottom: 8px;
+    vertical-align: middle;
+  }
+}
+
+
+.el-header,
+.el-main {
+  padding: 0;
+}
