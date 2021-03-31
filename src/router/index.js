@@ -59,6 +59,19 @@ export const asyncRoutes = [
     //     meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
     //   }
     // ]
+  },
+  {
+    path: '/department',
+    component: Layout,
+    redirect: '/department/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Department',
+        component: () => import('@/views/department/index'),
+        meta: { title: 'Department', icon: 'department' }
+      }
+    ]
   }
 ]
 
