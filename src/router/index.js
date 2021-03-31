@@ -22,6 +22,19 @@ export const constantRoutes = [
       component: () => import('@/views/dashboard/index'),
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
+  },
+  {
+    path: '/hospital',
+    component: Layout,
+    redirect: '/hospital/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Hospital',
+        component: () => import('@/views/hospital/index'),
+        meta: { title: 'Hospital', icon: 'hospital' }
+      }
+    ]
   }
 ]
 
