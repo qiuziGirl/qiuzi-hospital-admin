@@ -14,7 +14,7 @@
         v-model="listQuery.level"
         placeholder="Level"
         clearable
-        style="width: 90px; margin-left: 5px;"
+        style="width: 90px;"
         class="filter-item"
         @change="handleFilter"
         @clear="handleFilter"
@@ -28,8 +28,8 @@
       </el-select>
       <el-button
         class="filter-item"
-        style="margin-left: 5px;"
         type="primary"
+        style="margin-left: 15px;"
         icon="el-icon-search"
         @click="handleFilter"
       >

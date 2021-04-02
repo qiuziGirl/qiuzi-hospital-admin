@@ -53,6 +53,10 @@ a:active {
     display: inline-block;
     margin-bottom: 8px;
     vertical-align: middle;
+
+    + .filter-item {
+      margin-left: 5px;
+    }
   }
 }
 

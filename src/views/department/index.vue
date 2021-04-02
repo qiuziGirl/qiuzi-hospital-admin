@@ -11,8 +11,8 @@
         @keyup.enter.native="handleFilter"
       />
       <el-button
+        style="margin-left: 15px;"
         class="filter-item"
-        style="margin-left: 5px;"
         type="primary"
         icon="el-icon-search"
         @click="handleFilter"
