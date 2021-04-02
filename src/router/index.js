@@ -38,6 +38,7 @@ export const constantRoutes = [
   }
 ]
 
+// TODO: adjust component import
 export const asyncRoutes = [
   {
     path: '/account',
@@ -70,6 +71,19 @@ export const asyncRoutes = [
         name: 'Department',
         component: () => import('@/views/department/index'),
         meta: { title: 'Department', icon: 'department' }
+      }
+    ]
+  },
+  {
+    path: '/doctor',
+    component: Layout,
+    redirect: '/doctor/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Doctor',
+        component: () => import('@/views/doctor/index'),
+        meta: { title: 'Doctor', icon: 'doctor' }
       }
     ]
   }
