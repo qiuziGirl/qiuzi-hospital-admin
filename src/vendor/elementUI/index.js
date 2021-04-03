@@ -83,7 +83,8 @@ import {
   Loading,
   InfiniteScroll,
   Message,
-  MessageBox
+  MessageBox,
+  Notification
 } from 'element-ui'
 
 Vue.use(Pagination)

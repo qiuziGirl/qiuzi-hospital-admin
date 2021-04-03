@@ -22,9 +22,23 @@ export const constantRoutes = [
       component: () => import('@/views/dashboard/index'),
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
+  },
+  {
+    path: '/hospital',
+    component: Layout,
+    redirect: '/hospital/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Hospital',
+        component: () => import('@/views/hospital/index'),
+        meta: { title: 'Hospital', icon: 'hospital' }
+      }
+    ]
   }
 ]
 
+// TODO: adjust component import
 export const asyncRoutes = [
   {
     path: '/account',
@@ -46,6 +60,32 @@ export const asyncRoutes = [
     //     meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
     //   }
     // ]
+  },
+  {
+    path: '/department',
+    component: Layout,
+    redirect: '/department/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Department',
+        component: () => import('@/views/department/index'),
+        meta: { title: 'Department', icon: 'department' }
+      }
+    ]
+  },
+  {
+    path: '/doctor',
+    component: Layout,
+    redirect: '/doctor/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Doctor',
+        component: () => import('@/views/doctor/index'),
+        meta: { title: 'Doctor', icon: 'doctor' }
+      }
+    ]
   }
 ]
 

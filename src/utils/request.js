@@ -48,7 +48,7 @@ service.interceptors.response.use(
       return Promise.reject(new Error(result.message || 'Error'))
     }
 
-    return result
+    return result.data
   },
   // TODO: 待优化
   error => {

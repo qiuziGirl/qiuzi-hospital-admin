@@ -1,4 +1,4 @@
-// import { resetRouter } from '@/router'
+import { resetRouter } from '@/router'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const getDefaultState = () => {
@@ -37,10 +37,10 @@ const mutations = {
 const actions = {
   login ({ commit }, userInfo) {
     const { username, password } = userInfo
-    return $api.common.login({ name: username.trim(), password: password }).then(response => {
-      const { data } = response
-      commit('SET_TOKEN', data.token)
-      setToken(data.token)
+    return $api.common.login({ name: username.trim(), password: password }).then(data => {
+      const { token } = data
+      commit('SET_TOKEN', token)
+      setToken(token)
     })
   },
 
@@ -48,7 +48,7 @@ const actions = {
   getInfo ({ commit, state }) {
     return new Promise(async (resolve, reject) => {
       try {
-        const { data } = await $api.common.getInfo({ token: state.token })
+        const data = await $api.common.getInfo({ token: state.token })
 
         if (!data) {
           reject(new Error('Verification failed, please login again.'))
@@ -67,19 +67,19 @@ const actions = {
     })
   },
 
-  // user logout TODO
+  // user logout
   logout ({ commit, state }) {
-    // return new Promise((resolve, reject) => {
-    //   logout(state.token).then(() => {
-    //     removeToken() // must remove  token  first
-    //     resetRouter()
-    //     commit('RESET_STATE')
-    //     commit('SET_ROLES', [])
-    //     resolve()
-    //   }).catch(error => {
-    //     reject(error)
-    //   })
-    // })
+    return new Promise((resolve, reject) => {
+      $api.common.logout(state.token).then(() => {
+        removeToken() // must remove  token  first
+        resetRouter()
+        commit('RESET_STATE')
+        commit('SET_ROLES', [])
+        resolve()
+      }).catch(error => {
+        reject(error)
+      })
+    })
   },
 
   // remove token

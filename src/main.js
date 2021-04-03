@@ -6,6 +6,7 @@ import store from './store'
 
 import '@/icons' // icon
 import '@/permission' // permission control
+import '@/components' // globally import component
 
 import '@/assets/style/index.scss' // global css
 

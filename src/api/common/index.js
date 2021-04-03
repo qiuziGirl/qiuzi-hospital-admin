@@ -1,10 +1,10 @@
 import request from '@/utils/request'
 
 export default {
-  login: params => request({
+  login: data => request({
     url: '/admin/login',
     method: 'post',
-    data: params
+    data
   }),
   getInfo: params => request({
     url: '/admin/info',
