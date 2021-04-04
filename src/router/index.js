@@ -101,6 +101,19 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/workPlan',
+    component: Layout,
+    redirect: '/workPlan/index',
+    children: [
+      {
+        path: 'index',
+        name: 'WorkPlan',
+        component: () => import('@/views/workPlan'),
+        meta: { title: 'WorkPlan', icon: 'work-plan' }
+      }
+    ]
+  },
+  {
     path: '/appointment',
     component: Layout,
     redirect: '/appointment/index',
