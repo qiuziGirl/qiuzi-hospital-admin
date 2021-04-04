@@ -86,6 +86,19 @@ export const asyncRoutes = [
         meta: { title: 'Doctor', icon: 'doctor' }
       }
     ]
+  },
+  {
+    path: '/patient',
+    component: Layout,
+    redirect: '/patient/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Patient',
+        component: () => import('@/views/patient'),
+        meta: { title: 'Patient', icon: 'patient' }
+      }
+    ]
   }
 ]
 
