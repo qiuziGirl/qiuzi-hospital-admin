@@ -45,21 +45,21 @@ export const asyncRoutes = [
     component: Layout,
     redirect: '/account/profile',
     name: 'Account',
-    meta: { title: 'Account', icon: 'account', roles: ['editor', 'admin'] }
-    // children: [
-    //   {
-    //     path: 'list',
-    //     component: () => import('@/views/account/list'),
-    //     name: 'AccountList',
-    //     meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
-    //   },
-    //   {
-    //     path: 'profile',
-    //     component: () => import('@/views/account/profile'),
-    //     name: 'AccountProfile',
-    //     meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
-    //   }
-    // ]
+    meta: { title: 'Account', icon: 'account', roles: ['editor', 'admin'] },
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/account/accountList'),
+        name: 'AccountList',
+        meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
+      }
+      // {
+      //   path: 'profile',
+      //   component: () => import('@/views/account/profile'),
+      //   name: 'AccountProfile',
+      //   meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
+      // }
+    ]
   },
   {
     path: '/department',
