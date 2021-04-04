@@ -99,6 +99,19 @@ export const asyncRoutes = [
         meta: { title: 'Patient', icon: 'patient' }
       }
     ]
+  },
+  {
+    path: '/appointment',
+    component: Layout,
+    redirect: '/appointment/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Appointment',
+        component: () => import('@/views/appointment'),
+        meta: { title: 'Appointment', icon: 'appointment' }
+      }
+    ]
   }
 ]
 
