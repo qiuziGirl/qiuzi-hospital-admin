@@ -52,13 +52,13 @@ export const asyncRoutes = [
         component: () => import('@/views/account/accountList'),
         name: 'AccountList',
         meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
+      },
+      {
+        path: 'profile',
+        component: () => import('@/views/account/accountProfile'),
+        name: 'AccountProfile',
+        meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
       }
-      // {
-      //   path: 'profile',
-      //   component: () => import('@/views/account/profile'),
-      //   name: 'AccountProfile',
-      //   meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
-      // }
     ]
   },
   {
