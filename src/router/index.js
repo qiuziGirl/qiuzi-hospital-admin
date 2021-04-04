@@ -19,7 +19,7 @@ export const constantRoutes = [
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
+      component: () => import('@/views/dashboard'),
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
@@ -31,7 +31,7 @@ export const constantRoutes = [
       {
         path: 'index',
         name: 'Hospital',
-        component: () => import('@/views/hospital/index'),
+        component: () => import('@/views/hospital'),
         meta: { title: 'Hospital', icon: 'hospital' }
       }
     ]
@@ -49,13 +49,13 @@ export const asyncRoutes = [
     // children: [
     //   {
     //     path: 'list',
-    //     component: () => import('@/views/account/list/index'),
+    //     component: () => import('@/views/account/list'),
     //     name: 'AccountList',
     //     meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
     //   },
     //   {
     //     path: 'profile',
-    //     component: () => import('@/views/account/profile/index'),
+    //     component: () => import('@/views/account/profile'),
     //     name: 'AccountProfile',
     //     meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
     //   }
@@ -69,7 +69,7 @@ export const asyncRoutes = [
       {
         path: 'index',
         name: 'Department',
-        component: () => import('@/views/department/index'),
+        component: () => import('@/views/department'),
         meta: { title: 'Department', icon: 'department' }
       }
     ]
@@ -82,7 +82,7 @@ export const asyncRoutes = [
       {
         path: 'index',
         name: 'Doctor',
-        component: () => import('@/views/doctor/index'),
+        component: () => import('@/views/doctor'),
         meta: { title: 'Doctor', icon: 'doctor' }
       }
     ]
