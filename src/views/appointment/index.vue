@@ -53,7 +53,6 @@
         />
       </el-select>
       <el-button
-        v-waves
         class="filter-item"
         style="margin-left: 15px;"
         type="primary"
