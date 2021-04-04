@@ -27,8 +27,8 @@ export function parseTime (time) {
   const values = String(time).split(':')
 
   if (values.length >= 2) {
-    const hour = parseInt(values[0])
-    const minute = parseInt(values[1])
+    const hour = Number.parseInt(values[0])
+    const minute = Number.parseInt(values[1])
 
     return {
       hour,

@@ -396,8 +396,8 @@ export default {
           this.dialogLoading = true
           this.tempWorkPlan.doctorId = this.doctorKeyValue[this.tempWorkPlan.doctorName]
           const { date, house, maxAppointmentNum, type, departmentId, doctorId, doctorName, startTime: tempStartTime, endTime: tempEndTime } = this.tempWorkPlan
-          const startTime = $dayjs(date).hour(parseInt(tempStartTime.split(':')[0])).minute(parseInt(tempStartTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
-          const endTime = $dayjs(date).hour(parseInt(tempEndTime.split(':')[0])).minute(parseInt(tempEndTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
+          const startTime = $dayjs(date).hour(Number.parseInt(tempStartTime.split(':')[0])).minute(Number.parseInt(tempStartTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
+          const endTime = $dayjs(date).hour(Number.parseInt(tempEndTime.split(':')[0])).minute(Number.parseInt(tempEndTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
 
           try {
             await $api.workPlan.addWorkPlan({
@@ -441,8 +441,8 @@ export default {
         if (valid) {
           this.dialogLoading = true
           const { id, date, stopReason, temp, house, maxAppointmentNum, addNumCreater, type, departmentId, doctorId, startTime: tempStartTime, endTime: tempEndTime, stop } = this.tempWorkPlan
-          const startTime = $dayjs(date).hour(parseInt(tempStartTime.split(':')[0])).minute(parseInt(tempStartTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
-          const endTime = $dayjs(date).hour(parseInt(tempEndTime.split(':')[0])).minute(parseInt(tempEndTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
+          const startTime = $dayjs(date).hour(Number.parseInt(tempStartTime.split(':')[0])).minute(Number.parseInt(tempStartTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
+          const endTime = $dayjs(date).hour(Number.parseInt(tempEndTime.split(':')[0])).minute(Number.parseInt(tempEndTime.split(':')[1])).second(0).format('YYYY-MM-DD HH:mm:ss')
 
           try {
             await $api.workPlan.updateWorkPlan(id, {
