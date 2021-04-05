@@ -19,7 +19,7 @@ export const constantRoutes = [
     children: [{
       path: 'dashboard',
       name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
+      component: () => import('@/views/dashboard'),
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
@@ -31,7 +31,7 @@ export const constantRoutes = [
       {
         path: 'index',
         name: 'Hospital',
-        component: () => import('@/views/hospital/index'),
+        component: () => import('@/views/hospital'),
         meta: { title: 'Hospital', icon: 'hospital' }
       }
     ]
@@ -45,21 +45,21 @@ export const asyncRoutes = [
     component: Layout,
     redirect: '/account/profile',
     name: 'Account',
-    meta: { title: 'Account', icon: 'account', roles: ['editor', 'admin'] }
-    // children: [
-    //   {
-    //     path: 'list',
-    //     component: () => import('@/views/account/list/index'),
-    //     name: 'AccountList',
-    //     meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
-    //   },
-    //   {
-    //     path: 'profile',
-    //     component: () => import('@/views/account/profile/index'),
-    //     name: 'AccountProfile',
-    //     meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
-    //   }
-    // ]
+    meta: { title: 'Account', icon: 'account', roles: ['editor', 'admin'] },
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/account/accountList'),
+        name: 'AccountList',
+        meta: { title: 'Account List', icon: 'list', roles: ['admin'] }
+      },
+      {
+        path: 'profile',
+        component: () => import('@/views/account/accountProfile'),
+        name: 'AccountProfile',
+        meta: { title: 'Account Profile', icon: 'profile', roles: ['editor', 'admin'] }
+      }
+    ]
   },
   {
     path: '/department',
@@ -69,7 +69,7 @@ export const asyncRoutes = [
       {
         path: 'index',
         name: 'Department',
-        component: () => import('@/views/department/index'),
+        component: () => import('@/views/department'),
         meta: { title: 'Department', icon: 'department' }
       }
     ]
@@ -82,8 +82,60 @@ export const asyncRoutes = [
       {
         path: 'index',
         name: 'Doctor',
-        component: () => import('@/views/doctor/index'),
+        component: () => import('@/views/doctor'),
         meta: { title: 'Doctor', icon: 'doctor' }
+      }
+    ]
+  },
+  {
+    path: '/patient',
+    component: Layout,
+    redirect: '/patient/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Patient',
+        component: () => import('@/views/patient'),
+        meta: { title: 'Patient', icon: 'patient' }
+      }
+    ]
+  },
+  {
+    path: '/workPlan',
+    component: Layout,
+    redirect: '/workPlan/index',
+    children: [
+      {
+        path: 'index',
+        name: 'WorkPlan',
+        component: () => import('@/views/workPlan'),
+        meta: { title: 'WorkPlan', icon: 'work-plan' }
+      }
+    ]
+  },
+  {
+    path: '/appointment',
+    component: Layout,
+    redirect: '/appointment/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Appointment',
+        component: () => import('@/views/appointment'),
+        meta: { title: 'Appointment', icon: 'appointment' }
+      }
+    ]
+  },
+  {
+    path: '/record',
+    component: Layout,
+    redirect: '/record/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Record',
+        component: () => import('@/views/record'),
+        meta: { title: 'Record', icon: 'record' }
       }
     ]
   }
