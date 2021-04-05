@@ -1,10 +1,9 @@
 import Vue from 'vue'
 
-// TODO: Adjust component import
 import {
   Pagination,
   Dialog,
-  Autocomplete,
+  // Autocomplete,
   Dropdown,
   DropdownMenu,
   DropdownItem,
@@ -13,14 +12,14 @@ import {
   MenuItem,
   MenuItemGroup,
   Input,
-  InputNumber,
-  Radio,
-  RadioGroup,
-  RadioButton,
-  Checkbox,
-  CheckboxButton,
-  CheckboxGroup,
-  Switch,
+  // InputNumber,
+  // Radio,
+  // RadioGroup,
+  // RadioButton,
+  // Checkbox,
+  // CheckboxButton,
+  // CheckboxGroup,
+  // Switch,
   Select,
   Option,
   OptionGroup,
@@ -31,7 +30,7 @@ import {
   DatePicker,
   TimeSelect,
   TimePicker,
-  Popover,
+  // Popover,
   Tooltip,
   Breadcrumb,
   BreadcrumbItem,
@@ -40,20 +39,20 @@ import {
   Tabs,
   TabPane,
   Tag,
-  Tree,
+  // Tree,
   Alert,
-  Slider,
+  // Slider,
   Icon,
   Row,
   Col,
   Upload,
   Progress,
-  Spinner,
+  // Spinner,
   // Badge,
   Card,
   // Rate,
-  Steps,
-  Step,
+  // Steps,
+  // Step,
   Carousel,
   Scrollbar,
   CarouselItem,
@@ -70,18 +69,18 @@ import {
   Timeline,
   TimelineItem,
   // Link,
-  Divider,
-  Image,
-  Calendar,
+  // Divider,
+  // Image,
+  // Calendar,
   // Backtop,
   // PageHeader,
   CascaderPanel,
-  Avatar,
-  Drawer,
+  // Avatar,
+  // Drawer,
   Popconfirm,
   // CollapseTransition,
   Loading,
-  InfiniteScroll,
+  // InfiniteScroll,
   Message,
   MessageBox,
   Notification
@@ -89,7 +88,7 @@ import {
 
 Vue.use(Pagination)
 Vue.use(Dialog)
-Vue.use(Autocomplete)
+// Vue.use(Autocomplete)
 Vue.use(Dropdown)
 Vue.use(DropdownMenu)
 Vue.use(DropdownItem)
@@ -98,14 +97,14 @@ Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
 Vue.use(Input)
-Vue.use(InputNumber)
-Vue.use(Radio)
-Vue.use(RadioGroup)
-Vue.use(RadioButton)
-Vue.use(Checkbox)
-Vue.use(CheckboxButton)
-Vue.use(CheckboxGroup)
-Vue.use(Switch)
+// Vue.use(InputNumber)
+// Vue.use(Radio)
+// Vue.use(RadioGroup)
+// Vue.use(RadioButton)
+// Vue.use(Checkbox)
+// Vue.use(CheckboxButton)
+// Vue.use(CheckboxGroup)
+// Vue.use(Switch)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(OptionGroup)
@@ -116,7 +115,7 @@ Vue.use(TableColumn)
 Vue.use(DatePicker)
 Vue.use(TimeSelect)
 Vue.use(TimePicker)
-Vue.use(Popover)
+// Vue.use(Popover)
 Vue.use(Popconfirm)
 Vue.use(Tooltip)
 Vue.use(Breadcrumb)
@@ -126,20 +125,20 @@ Vue.use(FormItem)
 Vue.use(Tabs)
 Vue.use(TabPane)
 Vue.use(Tag)
-Vue.use(Tree)
+// Vue.use(Tree)
 Vue.use(Alert)
-Vue.use(Slider)
+// Vue.use(Slider)
 Vue.use(Icon)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Upload)
 Vue.use(Progress)
-Vue.use(Spinner)
+// Vue.use(Spinner)
 // Vue.use(Badge)
 Vue.use(Card)
 // Vue.use(Rate)
-Vue.use(Steps)
-Vue.use(Step)
+// Vue.use(Steps)
+// Vue.use(Step)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
 Vue.use(Collapse)
@@ -155,16 +154,16 @@ Vue.use(Footer)
 Vue.use(Timeline)
 Vue.use(TimelineItem)
 // Vue.use(Link)
-Vue.use(Divider)
-Vue.use(Image)
-Vue.use(Calendar)
+// Vue.use(Divider)
+// Vue.use(Image)
+// Vue.use(Calendar)
 // Vue.use(Backtop)
 // Vue.use(PageHeader)
 Vue.use(CascaderPanel)
-Vue.use(Avatar)
-Vue.use(Drawer)
+// Vue.use(Avatar)
+// Vue.use(Drawer)
 Vue.use(Scrollbar)
-Vue.use(InfiniteScroll)
+// Vue.use(InfiniteScroll)
 Vue.use(ColorPicker)
 
 Vue.use(Loading.directive)
