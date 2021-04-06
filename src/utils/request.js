@@ -1,7 +1,6 @@
 import axios from 'axios'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
-import { deleteEmptyParam } from '@/utils'
 import { Message, MessageBox } from 'element-ui'
 
 const service = axios.create({
@@ -16,7 +15,6 @@ service.interceptors.request.use(
       config.headers.Authorization = 'Bearer ' + getToken()
     }
 
-    config.params = deleteEmptyParam(config.params)
     return config
   },
   error => {
