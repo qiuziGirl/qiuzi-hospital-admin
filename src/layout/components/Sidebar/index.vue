@@ -9,7 +9,7 @@
         :background-color="variables.menuBackgroundColor"
         :text-color="variables.menuText"
         :unique-opened="false"
-        :active-text-color="variables.menuActiveText"
+        :active-text-color="variables.menuActiveTextColor"
         :collapse-transition="false"
         mode="vertical"
       >
@@ -28,7 +28,7 @@
 import { mapGetters } from 'vuex'
 import SidebarLogo from './components/SidebarLogo'
 import SidebarItem from './components/SidebarItem'
-import variables from '@/assets/style/shareVariables.scss'
+import variables from '@/assets/style/variables.scss'
 
 export default {
   name: 'Sidebar',

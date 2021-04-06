@@ -1,8 +1,26 @@
-// TODO: 重新命名 CSS variables
+$menu-text-color: #bfcbd9;
+$menu-active-text-color: #409eff;
+
+$menu-background-color: #304156;
+$menu-hover-color: #263445;
+
+$sub-menu-background-color: #1f2d3d;
+$sub-menu-hover-color: #001528;
+$sub-menu-active-text-color: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
 $side-bar-width: 210px;
-$menu-hover: #263445;
-$side-bar-width: 210px;
-$menu-bg: #304156;
-$sub-menu-active-text: #f4f4f5;
-$sub-menu-bg: #1f2d3d;
-$sub-menu-hover: #001528;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menu-text-color;
+  menuActiveTextColor: $menu-active-text-color;
+  menuHoverColor: $menu-hover-color;
+  menuBackgroundColor: $menu-background-color;
+
+  subMenuHoverColor: $sub-menu-hover-color;
+  subMenuActiveText: $sub-menu-active-text-color;
+  subMenuBackgroundColor: $sub-menu-background-color;
+  
+  sideBarWidth: $side-bar-width;
+}
