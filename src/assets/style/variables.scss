@@ -6,7 +6,7 @@ $menu-hover-color: #263445;
 
 $sub-menu-background-color: #1f2d3d;
 $sub-menu-hover-color: #001528;
-$sub-menu-active-text-color: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951 TODO
+$sub-menu-active-text-color: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
 
 $side-bar-width: 210px;
 
@@ -14,13 +14,13 @@ $side-bar-width: 210px;
 // https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
 :export {
   menuText: $menu-text-color;
-  menuActiveText: $menu-active-text-color;
-  menu-hoverColor: $menu-hover-color;
+  menuActiveTextColor: $menu-active-text-color;
+  menuHoverColor: $menu-hover-color;
   menuBackgroundColor: $menu-background-color;
 
-  sub-menu-hoverColor: $sub-menu-hover-color;
-  sub-menu-active-text: $sub-menu-active-text-color;
+  subMenuHoverColor: $sub-menu-hover-color;
+  subMenuActiveText: $sub-menu-active-text-color;
   subMenuBackgroundColor: $sub-menu-background-color;
   
-  side-bar-width: $side-bar-width;
+  sideBarWidth: $side-bar-width;
 }

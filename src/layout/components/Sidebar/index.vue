@@ -9,7 +9,7 @@
         :background-color="variables.menuBackgroundColor"
         :text-color="variables.menuText"
         :unique-opened="false"
-        :active-text-color="variables.menuActiveText"
+        :active-text-color="variables.menuActiveTextColor"
         :collapse-transition="false"
         mode="vertical"
       >
