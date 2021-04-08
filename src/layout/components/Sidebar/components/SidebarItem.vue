@@ -17,11 +17,11 @@
         <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="item.meta.title" />
       </template>
       <sidebar-item
-        v-for="child in item.children"
-        :key="child.path"
+        v-for="(childRoute, index) in item.children"
+        :key="index"
         :is-nest="true"
-        :item="child"
-        :base-path="resolvePath(child.path)"
+        :item="childRoute"
+        :base-path="resolvePath(childRoute.path)"
         class="nest-menu"
       />
     </el-submenu>

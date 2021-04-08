@@ -29,12 +29,12 @@ export const constantRoutes = [
     }]
   },
   {
-    path: '/hospital',
+    path: '/',
     component: Layout,
-    redirect: '/hospital/index',
+    redirect: '/hospital',
     children: [
       {
-        path: 'index',
+        path: 'hospital',
         name: 'Hospital',
         component: () => import('@/views/hospital'),
         meta: { title: 'Hospital', icon: 'hospital' }
@@ -43,12 +43,11 @@ export const constantRoutes = [
   }
 ]
 
-// TODO: adjust component import
 export const asyncRoutes = [
   {
     path: '/account',
     component: Layout,
-    redirect: '/account/profile',
+    redirect: '/account/list',
     name: 'Account',
     meta: { title: 'Account', icon: 'account', roles: ['editor', 'admin'] },
     children: [
@@ -67,12 +66,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/department',
+    path: '/',
     component: Layout,
-    redirect: '/department/index',
+    redirect: '/department',
     children: [
       {
-        path: 'index',
+        path: 'department',
         name: 'Department',
         component: () => import('@/views/department'),
         meta: { title: 'Department', icon: 'department' }
@@ -80,12 +79,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/doctor',
+    path: '/',
     component: Layout,
-    redirect: '/doctor/index',
+    redirect: '/doctor',
     children: [
       {
-        path: 'index',
+        path: 'doctor',
         name: 'Doctor',
         component: () => import('@/views/doctor'),
         meta: { title: 'Doctor', icon: 'doctor' }
@@ -93,12 +92,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/patient',
+    path: '/',
     component: Layout,
-    redirect: '/patient/index',
+    redirect: '/patient',
     children: [
       {
-        path: 'index',
+        path: 'patient',
         name: 'Patient',
         component: () => import('@/views/patient'),
         meta: { title: 'Patient', icon: 'patient' }
@@ -106,12 +105,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/workPlan',
+    path: '/',
     component: Layout,
-    redirect: '/workPlan/index',
+    redirect: '/workPlan',
     children: [
       {
-        path: 'index',
+        path: 'workPlan',
         name: 'WorkPlan',
         component: () => import('@/views/workPlan'),
         meta: { title: 'WorkPlan', icon: 'work-plan' }
@@ -119,12 +118,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/appointment',
+    path: '/',
     component: Layout,
-    redirect: '/appointment/index',
+    redirect: '/appointment',
     children: [
       {
-        path: 'index',
+        path: 'appointment',
         name: 'Appointment',
         component: () => import('@/views/appointment'),
         meta: { title: 'Appointment', icon: 'appointment' }
@@ -132,12 +131,12 @@ export const asyncRoutes = [
     ]
   },
   {
-    path: '/record',
+    path: '/',
     component: Layout,
-    redirect: '/record/index',
+    redirect: '/record',
     children: [
       {
-        path: 'index',
+        path: 'record',
         name: 'Record',
         component: () => import('@/views/record'),
         meta: { title: 'Record', icon: 'record' }
