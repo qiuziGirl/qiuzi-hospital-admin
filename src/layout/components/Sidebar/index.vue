@@ -14,8 +14,8 @@
         mode="vertical"
       >
         <sidebar-item
-          v-for="route in permission_routes"
-          :key="route.path"
+          v-for="(route, index) in permission_routes"
+          :key="index"
           :item="route"
           :base-path="route.path"
         />
@@ -46,7 +46,7 @@ export default {
     },
     activeMenu () {
       const { meta, path } = this.$route
-      // if set path, the sidebar will highlight the path you set TODO
+      // if set path, the sidebar will highlight the path you set
       if (meta.activeMenu) {
         return meta.activeMenu
       }
