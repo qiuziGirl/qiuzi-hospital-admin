@@ -1,7 +1,7 @@
 // TODO: 开放 stylelint 并进行调整
 // when menu collapsed
 .el-menu--vertical {
-  & > .el-menu {
+  > .el-menu {
     .svg-icon {
       margin-right: 16px;
     }
@@ -10,8 +10,7 @@
   .nest-menu .el-submenu > .el-submenu__title,
   .el-menu-item {
     &:hover {
-      // you can use $sub-menu-hover
-      background-color: $menu-hover !important;
+      background-color: $menu-hover-color !important;
     }
   }
 
@@ -53,7 +52,7 @@
     height: 100%;
     overflow: hidden;
     font-size: 0;
-    background-color: $menu-bg;
+    background-color: $menu-background-color;
     transition: width .28s;
 
     // reset element-ui css
@@ -103,21 +102,21 @@
     .submenu-title-noDropdown,
     .el-submenu__title {
       &:hover {
-        background-color: $menu-hover !important;
+        background-color: $menu-hover-color !important;
       }
     }
 
     .is-active > .el-submenu__title {
-      color: $sub-menu-active-text !important;
+      color: $sub-menu-active-text-color !important;
     }
 
     .nest-menu .el-submenu > .el-submenu__title,
     .el-submenu .el-menu-item {
       min-width: $side-bar-width !important;
-      background-color: $sub-menu-bg !important;
+      background-color: $sub-menu-background-color !important;
 
       &:hover {
-        background-color: $sub-menu-hover !important;
+        background-color: $sub-menu-hover-color !important;
       }
     }
   }
@@ -147,7 +146,7 @@
     .el-submenu {
       overflow: hidden;
 
-      & > .el-submenu__title {
+      > .el-submenu__title {
         padding: 0 !important;
 
         .svg-icon {
@@ -162,8 +161,8 @@
 
     .el-menu--collapse {
       .el-submenu {
-        & > .el-submenu__title {
-          & > span {
+        > .el-submenu__title {
+          > span {
             display: inline-block;
             width: 0;
             height: 0;
