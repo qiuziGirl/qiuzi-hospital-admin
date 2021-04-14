@@ -10,7 +10,7 @@
 import { isExternal } from '@/utils/validate'
 
 export default {
-  name: 'SidebarLink',
+  name: 'AppLink',
   props: {
     to: {
       type: String,
