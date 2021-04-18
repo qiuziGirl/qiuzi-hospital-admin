@@ -50,7 +50,6 @@ service.interceptors.response.use(
 
     return result.data
   },
-  // TODO: 待优化
   error => {
     Message({
       message: error.message,
@@ -62,35 +61,3 @@ service.interceptors.response.use(
 )
 
 export default service
-
-/**
- * @param {string} url
- * @param {Object} options
- * @returns {Promise<any>}
- */
-// const fetch = (url, options = {}) => {
-//   const { suburl, ...params } = options
-//   const requestHeaders = options.headers ?? { 'content-type': 'application/json' }
-
-//   return new Promise((resolve, reject) => {
-//     service({
-//       ...params,
-//       url: url + (suburl || ''),
-//       method: 'post',
-//       headers: requestHeaders
-//     }).then(data => {
-//       resolve(data)
-//     }).catch(error => {
-//       Message.error(error.message)
-//       reject(new Error(error))
-//     })
-//   })
-// }
-
-/**
- * Get 请求方法
- * @param {string} url
- * @param {Object} params
- * @returns {Promise<any>}
- */
-// export const get = (url, params) => fetch(url, { method: 'get', params })
