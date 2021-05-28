@@ -13,6 +13,8 @@
 ## Introduction
 [qiuzi-hospital-admin](https://github.com/qiuziGirl/qiuzi-hospital-admin) is a front-end project for hospital admin, as my graduation design. It is based on [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin).
 
+- [Preview](https://hospital.qiuzi.fun)
+
 ## Getting started
 
 ```bash
