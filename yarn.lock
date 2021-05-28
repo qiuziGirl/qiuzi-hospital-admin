@@ -9138,10 +9138,10 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-qiuzi@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/stylelint-config-qiuzi/download/stylelint-config-qiuzi-1.0.0.tgz#cef6fd3d32fe11eeef02d351245b51cff31e79f3"
-  integrity sha1-zvb9PTL+Ee7vAtNRJFtRz/MeefM=
+stylelint-config-qiuzi@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/stylelint-config-qiuzi/download/stylelint-config-qiuzi-1.1.1.tgz#b8ae584c1a47d64707adaca8c393b15fc3676330"
+  integrity sha1-uK5YTBpH1kcHrayow5OxX8NnYzA=
   dependencies:
     stylelint-config-recommended-scss "^4.2.0"
     stylelint-config-standard "^20.0.0"
