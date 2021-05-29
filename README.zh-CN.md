@@ -10,10 +10,11 @@
   </a>
 </p>
 
-English | [简体中文](./README.zh-CN.md)
+简体中文 | [English](./README.md)
 
-## Introduction
-[qiuzi-hospital-admin](https://github.com/qiuziGirl/qiuzi-hospital-admin) is a front-end project for hospital admin, as my graduation design. It is based on [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin). As the same time, [qiuzi-hospital-server](https://github.com/qiuziGirl/qiuzi-hospital-server) is the back-end service project on which it depends.
+## 简介
+
+[qiuzi-hospital-admin](https://github.com/qiuziGirl/qiuzi-hospital-admin) 是我的毕业设计项目。作为一个 Web 前端项目，它基于 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 搭建，为医院管理员提供相关操作服务。同时，[qiuzi-hospital-server](https://github.com/qiuziGirl/qiuzi-hospital-server) 是它所依赖的后端服务项目。
 
 - [Preview](https://hospital.qiuzi.fun)
 
