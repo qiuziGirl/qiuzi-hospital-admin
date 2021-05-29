@@ -1,7 +1,9 @@
 {
   "name": "qiuzi-hospital-admin",
   "version": "0.1.0",
-  "private": true,
+  "description": "The front-end project for hospital admin, as my graduation design.",
+  "author": "qiuzi <2515632823@qq.com>",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
