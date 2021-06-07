@@ -1,3 +1,4 @@
+import utility from 'utility'
 import { resetRouter } from '@/router'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
@@ -37,7 +38,9 @@ const mutations = {
 const actions = {
   login ({ commit }, userInfo) {
     const { username, password } = userInfo
-    return $api.common.login({ name: username.trim(), password: password }).then(data => {
+    const passwordMD5 = utility.md5(password)
+
+    return $api.common.login({ name: username.trim(), password: passwordMD5 }).then(data => {
       const { token } = data
       commit('SET_TOKEN', token)
       setToken(token)
