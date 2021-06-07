@@ -15,7 +15,7 @@ English | [简体中文](./README.zh-CN.md)
 ## Introduction
 [qiuzi-hospital-admin](https://github.com/qiuziGirl/qiuzi-hospital-admin) is a front-end project for hospital admin, as my graduation design. It is based on [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin). As the same time, [qiuzi-hospital-server](https://github.com/qiuziGirl/qiuzi-hospital-server) is the back-end service project on which it depends.
 
-- [Preview](https://hospital.qiuzi.fun)
+- [Preview](https://admin.hospital.qiuzi.fun)
 
 ## Getting started
 

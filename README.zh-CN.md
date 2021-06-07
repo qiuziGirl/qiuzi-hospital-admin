@@ -16,7 +16,7 @@
 
 [qiuzi-hospital-admin](https://github.com/qiuziGirl/qiuzi-hospital-admin) 是我的毕业设计项目。作为一个 Web 前端项目，它基于 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 搭建，为医院管理员提供相关操作服务。同时，[qiuzi-hospital-server](https://github.com/qiuziGirl/qiuzi-hospital-server) 是它所依赖的后端服务项目。
 
-- [预览](https://hospital.qiuzi.fun)
+- [预览](https://admin.hospital.qiuzi.fun)
 
 ## 开发
 
