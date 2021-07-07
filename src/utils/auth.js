@@ -7,7 +7,7 @@ export const getToken = () => {
 }
 
 export const setToken = token => {
-  return Cookies.set(TokenKey, token)
+  return Cookies.set(TokenKey, token, { secure: true, sameSite: 'Lax' })
 }
 
 export const removeToken = () => {
