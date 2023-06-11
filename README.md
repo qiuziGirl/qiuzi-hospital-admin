@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.6.11-brightgreen.svg" alt="vue" >
+    <img src="https://img.shields.io/badge/vue-2.7.14-brightgreen.svg" alt="vue" >
   </a>
   <a href="https://github.com/ElemeFE/element">
-    <img src="https://img.shields.io/badge/element--ui-2.15.1-brightgreen.svg" alt="element-ui">
+    <img src="https://img.shields.io/badge/element--ui-2.15.13-brightgreen.svg" alt="element-ui">
   </a>
   <a href="https://github.com/qiuziGirl/qiuzi-hospital-admin/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
