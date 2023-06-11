@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "axios": "^0.21.4",
-    "core-js": "^3.6.5",
+    "core-js": "^3.30.2",
     "dayjs": "^1.11.8",
     "element-ui": "^2.15.13",
     "js-cookie": "^2.2.1",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
-    "path-to-regexp": "^6.2.0",
-    "utility": "^1.17.0",
+    "path-to-regexp": "^6.2.1",
+    "utility": "^1.18.0",
     "vue": "^2.7.14",
     "vue-router": "^3.6.5",
     "vuex": "^3.6.2"
@@ -33,18 +33,18 @@
     "@vue/cli-service": "~4.5.19",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^6.0.1",
     "sass-loader": "^10.2.1",
-    "stylelint": "^13.11.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-qiuzi": "^1.1.0",
     "svg-sprite-loader": "^5.2.1",
-    "svgo": "^2.2.1",
-    "vue-template-compiler": "^2.6.11"
+    "svgo": "^2.8.0",
+    "vue-template-compiler": "^2.7.14"
   }
 }
