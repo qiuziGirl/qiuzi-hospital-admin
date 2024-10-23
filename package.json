@@ -12,7 +12,7 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo"
   },
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^1.4.0",
     "core-js": "^3.30.2",
     "dayjs": "^1.11.8",
     "element-ui": "^2.15.13",
