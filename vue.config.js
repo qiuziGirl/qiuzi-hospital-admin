@@ -24,17 +24,12 @@ module.exports = {
   devServer: {
     port: port,
     open: true,
-    disableHostCheck: true,
     proxy: {
       '/api/v1': {
-        // target: 'http://localhost:7001',
-        target: 'http://106.52.127.198:7001',
+        target: 'http://localhost:7001',
+        // target: 'http://106.52.127.198:80',
         changeOrigin: true
       }
-    },
-    overlay: {
-      errors: true,
-      warnings: false
     }
   },
   configureWebpack: {
@@ -42,6 +37,15 @@ module.exports = {
     resolve: {
       alias: {
         '@style': path.resolve(__dirname, './src/assets/style')
+      },
+      fallback: {
+        fs: false,
+        util: false,
+        assert: false,
+        stream: false,
+        crypto: false,
+        constants: false,
+        path: require.resolve('path-browserify')
       }
     },
     plugins: [
