@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@style/variables";
+@import "@style/variables.module";
 
 .app-wrapper {
   position: relative;
