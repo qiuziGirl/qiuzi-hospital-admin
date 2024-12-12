@@ -26,8 +26,8 @@ module.exports = {
     open: true,
     proxy: {
       '/api/v1': {
-        target: 'http://localhost:7001',
-        // target: 'http://106.52.127.198:80',
+        // target: 'http://localhost:7001',
+        target: 'http://114.132.231.127:7001',
         changeOrigin: true
       }
     }
