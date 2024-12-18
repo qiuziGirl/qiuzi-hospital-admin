@@ -48,3 +48,17 @@ export function addTime (time, increment) {
 
   return String(newTime.hour).padStart(2, '0') + ':' + String(newTime.minute).padStart(2, '0')
 }
+
+/**
+ * @description 对字符串进行 SHA-256 哈希加密
+ * @param {string} value 被加密字符串
+ * @returns {string}
+ */
+export async function generateHashString (value) {
+  const encoder = new TextEncoder()
+  const data = encoder.encode(value)
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data)
+  const hashArray = Array.from(new Uint8Array(hashBuffer))
+  const hashHex = hashArray.map(item => item.toString(16).padStart(2, '0')).join('')
+  return hashHex
+}
