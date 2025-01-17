@@ -58,22 +58,22 @@
           width="70"
         />
         <el-table-column label="Name" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.name }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Role" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.role }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Last LoginTime" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.lastLoginTime | formatTime }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Actions" align="center" width="250">
-          <template v-slot="{ row, $index }">
+          <template #default="{ row, $index }">
             <el-button type="primary" size="mini" @click="handleUpdate(row)">
               Edit
             </el-button>

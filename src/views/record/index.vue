@@ -67,27 +67,27 @@
           width="70"
         />
         <el-table-column label="PatientName" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.patientName }}</span>
           </template>
         </el-table-column>
         <el-table-column label="CardNo" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.cardNo }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Department" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.department }}</span>
           </template>
         </el-table-column>
         <el-table-column label="DoctorName" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.doctorName }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Date" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.date }}</span>
           </template>
         </el-table-column>

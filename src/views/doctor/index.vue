@@ -78,32 +78,32 @@
           width="70"
         />
         <el-table-column label="DoctorId" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.doctorId }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Name" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.name }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Gender" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.gender | genderFilter }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Department" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.department }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Duty" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.duty }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Actions" align="center" width="250">
-          <template v-slot="{ row, $index }">
+          <template #default="{ row, $index }">
             <el-button type="primary" size="mini" @click="handleUpdate(row)">
               Edit
             </el-button>
