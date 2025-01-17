@@ -73,8 +73,9 @@ export default {
         this.loading = false
       }
     },
-    async updateAdmin () {
+    async updateAdmin (newUser) {
       this.loading = true
+      this.user = Object.assign(this.user, newUser)
       const { id, name, mobile, email, avatar } = this.user
 
       try {

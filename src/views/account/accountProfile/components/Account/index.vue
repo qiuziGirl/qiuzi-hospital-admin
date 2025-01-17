@@ -3,19 +3,19 @@
     <el-form
       ref="adminForm"
       :rules="rules"
-      :model="user"
+      :model="localUser"
       label-position="left"
       label-width="100px"
       class="container-left"
     >
       <el-form-item label="Name" prop="name">
-        <el-input v-model.trim="user.name" style="width: 320px;" />
+        <el-input v-model.trim="localUser.name" style="width: 320px;" />
       </el-form-item>
       <el-form-item label="Mobile" prop="mobile">
-        <el-input v-model.trim="user.mobile" style="width: 320px;" />
+        <el-input v-model.trim="localUser.mobile" style="width: 320px;" />
       </el-form-item>
       <el-form-item label="Email" prop="email">
-        <el-input v-model.trim="user.email" style="width: 320px;" />
+        <el-input v-model.trim="localUser.email" style="width: 320px;" />
       </el-form-item>
       <el-form-item style="margin-top: 200px;">
         <el-button type="primary" style="width: 500px;" @click="submit">
@@ -33,8 +33,8 @@
       :on-success="handleAvatarSuccess"
     >
       <img
-        v-if="user.avatar"
-        :src="user.avatar"
+        v-if="localUser.avatar"
+        :src="localUser.avatar"
         class="avatar"
         alt="admin's avatar"
       >
@@ -69,6 +69,7 @@ export default {
       }
     }
     return {
+      localUser: { ...this.user }, // 创建本地副本
       rules: {
         name: [{ required: true, message: 'Name is required', trigger: 'blur' }],
         mobile: [{ required: true, trigger: ['blur', 'change'], validator: validateMobile }],
@@ -79,10 +80,19 @@ export default {
       }
     }
   },
+  watch: {
+    user: {
+      handler (newValue) {
+        this.localUser = { ...newValue } // 当父组件传递的 user 发生变化时同步更新本地副本
+      },
+      deep: true
+    }
+  },
   methods: {
     submit () {
       this.$refs.adminForm.validate(valid => {
-        if (valid) this.$emit('update', this.user)
+        console.log('localUser: ', this.localUser)
+        if (valid) this.$emit('update', { ...this.localUser }) // 将本地副本传递给父组件
       })
     },
     beforeAvatarUpload (file) {
@@ -96,7 +106,7 @@ export default {
       return isIMG && isLt1M
     },
     handleAvatarSuccess (res) {
-      this.user.avatar = res.data.url
+      this.localUser.avatar = res.data.url // 更新本地副本的头像
     }
   }
 }
