@@ -1,5 +1,5 @@
-import utility from 'utility'
 import { resetRouter } from '@/router'
+import { generateHashString } from '@/utils'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 
 const getDefaultState = () => {
@@ -36,11 +36,11 @@ const mutations = {
 }
 
 const actions = {
-  login ({ commit }, userInfo) {
+  async login ({ commit }, userInfo) {
     const { username, password } = userInfo
-    const passwordMD5 = utility.md5(password)
+    const passwordHash = await generateHashString(password)
 
-    return $api.common.login({ name: username.trim(), password: passwordMD5 }).then(data => {
+    return $api.common.login({ name: username.trim(), password: passwordHash }).then(data => {
       const { token } = data
       commit('SET_TOKEN', token)
       setToken(token)
