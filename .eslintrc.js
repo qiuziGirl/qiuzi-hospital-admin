@@ -16,10 +16,7 @@ module.exports = {
     'no-async-promise-executor': 'off',
     'vue/max-attributes-per-line': ['error', {
       singleline: 3,
-      multiline: {
-        max: 1,
-        allowFirstLine: false
-      }
+      multiline: 1
     }],
     'no-unused-vars': ['error',
       { vars: 'all', args: 'after-used' }
