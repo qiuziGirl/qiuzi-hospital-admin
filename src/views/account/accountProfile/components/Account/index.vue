@@ -91,7 +91,6 @@ export default {
   methods: {
     submit () {
       this.$refs.adminForm.validate(valid => {
-        console.log('localUser: ', this.localUser)
         if (valid) this.$emit('update', { ...this.localUser }) // 将本地副本传递给父组件
       })
     },

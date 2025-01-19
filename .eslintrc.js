@@ -11,8 +11,8 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': 'warn',
+    'no-debugger': 'warn',
     'no-async-promise-executor': 'off',
     'vue/max-attributes-per-line': ['error', {
       singleline: 3,
@@ -20,7 +20,10 @@ module.exports = {
     }],
     'no-unused-vars': ['error',
       { vars: 'all', args: 'after-used' }
-    ]
+    ],
+    'vue/multi-word-component-names': ['off', {
+      ignores: []
+    }]
   },
   globals: {
     $api: true,
