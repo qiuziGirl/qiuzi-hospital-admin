@@ -48,26 +48,23 @@ const actions = {
   },
 
   // get user info
-  getInfo ({ commit, state }) {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const data = await $api.common.getInfo({ token: state.token })
-
-        if (!data) {
-          reject(new Error('Verification failed, please login again.'))
-        }
-
-        const { id, name, role, avatar } = data
-
-        commit('SET_ID', id)
-        commit('SET_NAME', name)
-        commit('SET_ROLES', role)
-        commit('SET_AVATAR', avatar)
-        resolve(data)
-      } catch (error) {
-        reject(error)
+  async getInfo ({ commit, state }) {
+    try {
+      const data = await $api.common.getInfo({ token: state.token })
+      if (!data) {
+        throw new Error('Verification failed, please login again.')
       }
-    })
+
+      const { id, name, role, avatar } = data
+
+      commit('SET_ID', id)
+      commit('SET_NAME', name)
+      commit('SET_ROLES', role)
+      commit('SET_AVATAR', avatar)
+      return data
+    } catch (error) {
+      return Promise.reject(error)
+    }
   },
 
   // user logout
