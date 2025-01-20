@@ -7,9 +7,6 @@ module.exports = {
     'plugin:vue/recommended',
     '@vue/standard'
   ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn',
