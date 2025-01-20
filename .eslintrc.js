@@ -10,7 +10,6 @@ module.exports = {
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn',
-    'no-async-promise-executor': 'off',
     'vue/max-attributes-per-line': ['error', {
       singleline: 3,
       multiline: 1
