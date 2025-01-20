@@ -22,7 +22,7 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
-    port: port,
+    port,
     open: true,
     proxy: {
       '/api/v1': {
@@ -33,7 +33,7 @@ module.exports = {
     }
   },
   configureWebpack: {
-    name: name,
+    name,
     resolve: {
       alias: {
         '@style': path.resolve(__dirname, './src/assets/style')
