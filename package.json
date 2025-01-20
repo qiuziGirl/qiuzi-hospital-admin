@@ -35,7 +35,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.6.0",
-    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "9.28.0",
     "node-sass": "^9.0.0",
     "path-browserify": "^1.0.1",

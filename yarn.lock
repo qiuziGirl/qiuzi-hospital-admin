@@ -4026,10 +4026,10 @@ eslint-plugin-promise@^6.6.0:
   resolved "https://registry.npmmirror.com/eslint-plugin-promise/-/eslint-plugin-promise-6.6.0.tgz#acd3fd7d55cead7a10f92cf698f36c0aafcd717a"
   integrity sha512-57Zzfw8G6+Gq7axm2Pdo3gW/Rx3h9Yywgn61uE/3elTCOePEHVrn2i5CdfBwA1BLK0Q0WqctICIUSqXZW/VprQ==
 
-eslint-plugin-standard@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.npmmirror.com/eslint-plugin-standard/download/eslint-plugin-standard-4.1.0.tgz#0c3bf3a67e853f8bbbc580fb4945fbf16f41b7c5"
-  integrity sha1-DDvzpn6FP4u7xYD7SUX78W9Bt8U=
+eslint-plugin-standard@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/eslint-plugin-standard/-/eslint-plugin-standard-5.0.0.tgz#c43f6925d669f177db46f095ea30be95476b1ee4"
+  integrity sha512-eSIXPc9wBM4BrniMzJRBm2uoVuXz2EPa+NXPk2+itrVt+r5SbKFERx/IgrK/HmfjddyKVz2f+j+7gBRvu19xLg==
 
 eslint-plugin-vue@9.28.0:
   version "9.28.0"
