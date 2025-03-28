@@ -119,7 +119,7 @@
     }
   }
 
-  .hideSidebar {
+  .hide-sidebar {
     .sidebar-container {
       width: 54px !important;
     }
@@ -190,7 +190,8 @@
       transition: transform .28s;
     }
 
-    &.hideSidebar {
+
+    &.hide-sidebar {
       .sidebar-container {
         pointer-events: none;
         transition-duration: .3s;
