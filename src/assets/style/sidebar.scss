@@ -97,7 +97,7 @@
     }
 
     // menu hover
-    .submenu-title-noDropdown,
+    .submenu-title-no-dropdown,
     .el-submenu__title {
       &:hover {
         background-color: $menu-hover-color !important;
@@ -129,7 +129,7 @@
     }
 
     /* stylelint-disable no-descending-specificity */
-    .submenu-title-noDropdown {
+    .submenu-title-no-dropdown {
       position: relative;
       padding: 0 !important;
 
@@ -172,7 +172,7 @@
     min-width: $side-bar-width !important;
   }
 
-  .withoutAnimation {
+  .without-animation {
     .main-container,
     .sidebar-container {
       transition: none;

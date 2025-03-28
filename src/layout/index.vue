@@ -38,8 +38,8 @@ export default {
     classObj () {
       return {
         'hide-sidebar': !this.sidebar.opened,
-        openSidebar: this.sidebar.opened,
-        withoutAnimation: this.sidebar.withoutAnimation,
+        'open-sidebar': this.sidebar.opened,
+        'without-animation': this.sidebar.withoutAnimation,
         mobile: this.device === 'mobile'
       }
     }
@@ -60,7 +60,7 @@ export default {
   width: 100%;
   height: 100%;
 
-  &.mobile.openSidebar {
+  &.mobile.open-sidebar {
     position: fixed;
     top: 0;
   }
