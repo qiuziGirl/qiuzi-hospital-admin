@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   extends: ['stylelint-config-qiuzi/scss'],
   rules: {
+    'import-notation': 'string',
     'selector-max-class': 6,
     'selector-max-compound-selectors': 6,
     'scss/dollar-variable-pattern': null,
