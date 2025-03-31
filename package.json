@@ -41,7 +41,7 @@
     "path-browserify": "^1.0.1",
     "sass-loader": "^16.0.4",
     "stylelint": "^15.11.0",
-    "stylelint-config-qiuzi": "^1.1.6",
+    "stylelint-config-qiuzi": "^2.0.0",
     "svg-sprite-loader": "^6.0.11",
     "svgo": "^3.3.1",
     "vue-template-compiler": "^2.7.16"
