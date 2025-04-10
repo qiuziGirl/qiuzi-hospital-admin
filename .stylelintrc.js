@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['stylelint-config-qiuzi/scss'],
+  extends: ['stylelint-config-qiuzi/scss', "stylelint-config-html/vue"],
   rules: {
     'import-notation': 'string',
     'selector-max-class': 6,
