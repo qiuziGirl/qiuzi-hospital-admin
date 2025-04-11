@@ -152,8 +152,8 @@ export default {
 
   .el-form-item {
     color: #454545;
-    background: rgba(0, 0, 0, .1);
-    border: 1px solid rgba(255, 255, 255, .1);
+    background: rgb(0 0 0 / 10%);
+    border: 1px solid rgb(255 255 255 / 10%);
     border-radius: 5px;
   }
 }

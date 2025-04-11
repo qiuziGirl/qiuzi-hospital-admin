@@ -7,23 +7,19 @@ module.exports = {
     'plugin:vue/recommended',
     '@vue/standard'
   ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-async-promise-executor': 'off',
+    'no-console': 'warn',
+    'no-debugger': 'warn',
     'vue/max-attributes-per-line': ['error', {
       singleline: 3,
-      multiline: {
-        max: 1,
-        allowFirstLine: false
-      }
+      multiline: 1
     }],
     'no-unused-vars': ['error',
       { vars: 'all', args: 'after-used' }
-    ]
+    ],
+    'vue/multi-word-component-names': ['off', {
+      ignores: []
+    }]
   },
   globals: {
     $api: true,

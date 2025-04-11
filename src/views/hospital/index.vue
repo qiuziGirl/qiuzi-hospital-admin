@@ -61,27 +61,27 @@
           width="70"
         />
         <el-table-column label="Name" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.name }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Manager" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.manager }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Level" align="center" width="100">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.level | levelFilter }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Address" align="center" min-width="100">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.address }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Actions" align="center" width="250">
-          <template v-slot="{ row, $index }">
+          <template #default="{ row, $index }">
             <el-button type="primary" size="mini" @click="handleUpdate(row)">
               Edit
             </el-button>

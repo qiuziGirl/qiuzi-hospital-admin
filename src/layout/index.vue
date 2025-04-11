@@ -37,9 +37,9 @@ export default {
     },
     classObj () {
       return {
-        hideSidebar: !this.sidebar.opened,
-        openSidebar: this.sidebar.opened,
-        withoutAnimation: this.sidebar.withoutAnimation,
+        'hide-sidebar': !this.sidebar.opened,
+        'open-sidebar': this.sidebar.opened,
+        'without-animation': this.sidebar.withoutAnimation,
         mobile: this.device === 'mobile'
       }
     }
@@ -60,7 +60,7 @@ export default {
   width: 100%;
   height: 100%;
 
-  &.mobile.openSidebar {
+  &.mobile.open-sidebar {
     position: fixed;
     top: 0;
   }
@@ -85,7 +85,7 @@ export default {
   transition: width .28s;
 }
 
-.hideSidebar .fixed-header {
+.hide-sidebar .fixed-header {
   width: calc(100% - 54px);
 }
 

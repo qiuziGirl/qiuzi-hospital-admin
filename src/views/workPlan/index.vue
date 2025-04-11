@@ -84,37 +84,37 @@
           width="70"
         />
         <el-table-column label="Department" align="center" min-width="80">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.departmentId | departmentFilter(departmentTypeMap) }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Doctor Name" align="center">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.doctorName }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Type" align="center">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.type }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Remaining" align="center">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.remainingNum }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Sum" align="center">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.maxAppointmentNum }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Date" align="center">
-          <template v-slot="{ row }">
+          <template #default="{ row }">
             <span>{{ row.date }}</span>
           </template>
         </el-table-column>
         <el-table-column label="Actions" align="center" width="250">
-          <template v-slot="{ row, $index }">
+          <template #default="{ row, $index }">
             <el-button type="primary" size="mini" @click="handleUpdate(row)">
               Edit
             </el-button>
