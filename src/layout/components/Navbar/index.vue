@@ -69,7 +69,7 @@ export default {
   height: 50px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 
   .hamburger-container {
     float: left;
@@ -80,7 +80,7 @@ export default {
     -webkit-tap-highlight-color: transparent;
 
     &:hover {
-      background-color: rgba(0, 0, 0, .025);
+      background-color: rgb(0 0 0 / 2.5%);
     }
   }
 
@@ -110,7 +110,7 @@ export default {
         transition: background-color .3s;
 
         &:hover {
-          background-color: rgba(0, 0, 0, .025);
+          background-color: rgb(0 0 0 / 2.5%);
         }
       }
     }

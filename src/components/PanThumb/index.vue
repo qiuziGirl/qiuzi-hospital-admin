@@ -42,7 +42,7 @@ export default {
   height: 200px;
   cursor: default;
   border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 
   .pan-info {
     position: absolute;
@@ -50,7 +50,7 @@ export default {
     height: inherit;
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 0 0 5px rgb(0 0 0 / 5%);
 
     .pan-info-roles-container {
       padding: 20px;
