@@ -20,6 +20,9 @@ module.exports = {
       {
         "ignorePseudoElements": ["v-deep"]
       }
-    ]
+    ],
+    "value-keyword-case": ["lower", {
+      "ignoreKeywords": ["currentColor"]
+    }]
   }
 }
