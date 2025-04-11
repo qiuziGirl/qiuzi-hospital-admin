@@ -14,6 +14,12 @@ module.exports = {
         message: (selector) => `类名 "${selector}" 需符合 kebab-case 或 BEM 规范（block__element--modifier）`,
         resolveNestedSelectors: true // 允许嵌套选择器验证
       }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["v-deep"]
+      }
     ]
   }
 }
