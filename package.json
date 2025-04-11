@@ -20,6 +20,7 @@
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "path-to-regexp": "^8.2.0",
+    "sass": "^1.86.3",
     "vue": "^2.7.16",
     "vue-router": "^3.6.5",
     "vuex": "^3.6.2"
@@ -37,7 +38,6 @@
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "9.32.0",
-    "node-sass": "^9.0.0",
     "path-browserify": "^1.0.1",
     "postcss-html": "^1.8.0",
     "sass-loader": "^16.0.4",
