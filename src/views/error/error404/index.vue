@@ -70,7 +70,7 @@ export default {
         left: 220px;
         width: 80px;
         opacity: 0;
-        animation-name: cloudLeft;
+        animation-name: cloud-left;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-delay: 1s;
@@ -82,7 +82,7 @@ export default {
         left: 420px;
         width: 46px;
         opacity: 0;
-        animation-name: cloudMid;
+        animation-name: cloud-mid;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-delay: 1.2s;
@@ -94,14 +94,14 @@ export default {
         left: 500px;
         width: 62px;
         opacity: 0;
-        animation-name: cloudRight;
+        animation-name: cloud-right;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-delay: 1s;
         animation-fill-mode: forwards;
       }
 
-      @keyframes cloudLeft {
+      @keyframes cloud-left {
         0% {
           top: 17px;
           left: 220px;
@@ -127,7 +127,7 @@ export default {
         }
       }
 
-      @keyframes cloudMid {
+      @keyframes cloud-mid {
         0% {
           top: 10px;
           left: 420px;
@@ -153,7 +153,7 @@ export default {
         }
       }
 
-      @keyframes cloudRight {
+      @keyframes cloud-right {
         0% {
           top: 100px;
           left: 500px;
@@ -195,7 +195,7 @@ export default {
       line-height: 40px;
       color: #1482f0;
       opacity: 0;
-      animation-name: slideUp;
+      animation-name: slide-up;
       animation-duration: .5s;
       animation-fill-mode: forwards;
     }
@@ -207,7 +207,7 @@ export default {
       line-height: 24px;
       color: #222;
       opacity: 0;
-      animation-name: slideUp;
+      animation-name: slide-up;
       animation-duration: .5s;
       animation-delay: .1s;
       animation-fill-mode: forwards;
@@ -219,7 +219,7 @@ export default {
       line-height: 21px;
       color: grey;
       opacity: 0;
-      animation-name: slideUp;
+      animation-name: slide-up;
       animation-duration: .5s;
       animation-delay: .2s;
       animation-fill-mode: forwards;
@@ -238,13 +238,13 @@ export default {
       background: #1482f0;
       border-radius: 100px;
       opacity: 0;
-      animation-name: slideUp;
+      animation-name: slide-up;
       animation-duration: .5s;
       animation-delay: .3s;
       animation-fill-mode: forwards;
     }
 
-    @keyframes slideUp {
+    @keyframes slide-up {
       0% {
         opacity: 0;
         transform: translateY(60px);

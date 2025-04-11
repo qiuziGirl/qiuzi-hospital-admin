@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
-    <transition name="sidebarLogoFade">
+    <transition name="sidebar-logo-fade">
       <router-link
         v-if="collapse"
         key="collapse"
@@ -46,12 +46,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sidebarLogoFade-enter-active {
+.sidebar-logo-fade-enter-active {
   transition: opacity 1.5s;
 }
 
-.sidebarLogoFade-enter,
-.sidebarLogoFade-leave-to {
+.sidebar-logo-fade-enter,
+.sidebar-logo-fade-leave-to {
   opacity: 0;
 }
 
