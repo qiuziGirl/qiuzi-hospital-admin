@@ -441,7 +441,7 @@ export default {
 
 <style lang="scss" scoped>
 .dialog-container {
-  /deep/ .el-dialog__body {
+  ::v-deep .el-dialog__body {
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
