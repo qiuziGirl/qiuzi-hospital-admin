@@ -1,3 +1,5 @@
+@use "./variables.module" as vars;
+
 // when menu collapsed
 .el-menu--vertical > .el-menu {
   .svg-icon {
@@ -8,7 +10,7 @@
   .nest-menu .el-submenu > .el-submenu__title,
   .el-menu-item {
     &:hover {
-      background-color: $menu-hover-color !important;
+      background-color: vars.$menu-hover-color !important;
     }
   }
 
@@ -36,7 +38,7 @@
   .main-container {
     position: relative;
     min-height: 100%;
-    margin-left: $side-bar-width;
+    margin-left: vars.$side-bar-width;
     transition: margin-left .28s;
   }
 
@@ -46,11 +48,11 @@
     bottom: 0;
     left: 0;
     z-index: 1001;
-    width: $side-bar-width !important;
+    width: vars.$side-bar-width !important;
     height: 100%;
     overflow: hidden;
     font-size: 0;
-    background-color: $menu-background-color;
+    background-color: vars.$menu-background-color;
     transition: width .28s;
 
     // reset element-ui css
@@ -100,21 +102,21 @@
     .submenu-title-no-dropdown,
     .el-submenu__title {
       &:hover {
-        background-color: $menu-hover-color !important;
+        background-color: vars.$menu-hover-color !important;
       }
     }
 
     .is-active > .el-submenu__title {
-      color: $sub-menu-active-text-color !important;
+      color: vars.$sub-menu-active-text-color !important;
     }
 
     .nest-menu .el-submenu > .el-submenu__title,
     .el-submenu .el-menu-item {
-      min-width: $side-bar-width !important;
-      background-color: $sub-menu-background-color !important;
+      min-width: vars.$side-bar-width !important;
+      background-color: vars.$sub-menu-background-color !important;
 
       &:hover {
-        background-color: $sub-menu-hover-color !important;
+        background-color: vars.$sub-menu-hover-color !important;
       }
     }
   }
@@ -169,7 +171,7 @@
   }
 
   .el-menu--collapse .el-menu .el-submenu {
-    min-width: $side-bar-width !important;
+    min-width: vars.$side-bar-width !important;
   }
 
   .without-animation {
@@ -186,7 +188,7 @@
     }
 
     .sidebar-container {
-      width: $side-bar-width !important;
+      width: vars.$side-bar-width !important;
       transition: transform .28s;
     }
 
@@ -195,7 +197,7 @@
       .sidebar-container {
         pointer-events: none;
         transition-duration: .3s;
-        transform: translate3d(-$side-bar-width, 0, 0);
+        transform: translate3d(calc(-1 * vars.$side-bar-width), 0, 0);
       }
     }
   }

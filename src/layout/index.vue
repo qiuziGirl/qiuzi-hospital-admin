@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@style/variables.module";
+@use "@style/variables.module" as vars;
 
 .app-wrapper {
   position: relative;
@@ -81,7 +81,7 @@ export default {
   top: 0;
   right: 0;
   z-index: 9;
-  width: calc(100% - #{$side-bar-width});
+  width: calc(100% - #{vars.$side-bar-width});
   transition: width .28s;
 }
 
