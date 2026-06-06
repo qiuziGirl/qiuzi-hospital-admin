@@ -47,5 +47,8 @@
     "svg-sprite-loader": "^6.0.11",
     "svgo": "^3.3.1",
     "vue-template-compiler": "^2.7.16"
+  },
+  "resolutions": {
+    "@achrinza/node-ipc": "9.2.10"
   }
 }
